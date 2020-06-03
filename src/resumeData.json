@@ -4,18 +4,19 @@
     "occupation":"Software Engineer",
     "description":"I recently graduated from the University of Wisconsin-Madison, and am currently employed with Target",
     "image":"profilepic.jpg",
-    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
+    "bio":"I'm a recent 22 year-old college graduate. I describe myself as someone who is passionate about learning and trying new things, while also not being afraid to inquire about things I don't understand. I grew up playing sports my whole life such as basketball, soccer, and golf, which has led me to become an avid Minnesota sports fan. I aspire to travel and see as much of the world as I can in my life. ",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
     "email": "mannimendiratta@yahoo.com",
+    "email2": "mannimendiratta@gmail.com",
     "phone": "555-555-5555",
     "address":{
       "street":"(Your Street)",
       "city":"Minneapolis",
-      "state":"(Your State)",
-      "zip": "(Your Zip/Postal Code)"
+      "state":"Minnesota",
+      "zip": "55449"
     },
-    "website": "http://www.timbakerdev.com",
-    "resumedownload":"http://timbakerdev.com",
+    "website": "",
+    "resumedownload":"",
     "social":[
       {
         "name":"facebook",

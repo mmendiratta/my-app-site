@@ -21,7 +21,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header data={this.state.resumeData.main}/>
-        <About />
+        <About data={this.state.resumeData.main}/>
         <Resume />
         <Portfolio />
         <Contact />
