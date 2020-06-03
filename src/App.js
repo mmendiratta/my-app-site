@@ -3,15 +3,32 @@ import './App.css';
 import Header from './components/Header.js'
 import About from './components/About.js'
 import Resume from './components/Resume';
+import Portfolio from './components/Portfolio.js';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import { Component } from 'react';
+import data from './resumeData.json'
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <About />
-      <Resume />
-    </div>
-  );
+class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      resumeData: data
+    };
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Header data={this.state.resumeData.main}/>
+        <About />
+        <Resume />
+        <Portfolio />
+        <Contact />
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;

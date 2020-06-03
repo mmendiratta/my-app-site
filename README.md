@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+header picture: https://www.itl.cat/wallview/mbxbwR_high-resolution-high-resolution-night-sky/
+
 ## Available Scripts
 
 In the project directory, you can run:
