@@ -25,7 +25,7 @@ class App extends Component {
         <Resume />
         <Portfolio />
         <Contact />
-        <Footer />
+        <Footer data={this.state.resumeData.main}/>
       </div>
     );
   }
