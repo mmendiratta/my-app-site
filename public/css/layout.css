@@ -828,7 +828,7 @@ call-to-action .button {
    font: 18px/36px 'opensans-light', sans-serif;
    padding-right: 3%;
 }
-#contact .header-col { padding-top: 6px; }
+#contact .header-col { padding-top: 6px;  }
 
 
 /* contact form */
