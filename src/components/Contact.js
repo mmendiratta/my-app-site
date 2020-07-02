@@ -1,8 +1,57 @@
 import React, { Component } from 'react';
 
 class Contact extends Component {
-  render() {
+   constructor(props) {
+      super(props);
+      this.state = {
+         name: '',
+         email: '',
+         subject: '',
+         message: ''
+      }
+   }
 
+   onNameChange(event) {
+      this.setState({name: event.target.value})
+   }
+   onEmailChange(event) {
+      this.setState({email: event.target.value})
+   }
+   onSubjectChange(event) {
+      this.setState({subject: event.target.value})
+   }
+   onMessageChange(event) {
+      this.setState({message: event.target.value})
+   }
+   handleSubmit(event) {
+      event.preventDefault();
+      console.log(this.state);
+      fetch('/send',{  
+        method: "POST",
+        body: JSON.stringify(this.state),
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+      }).then(
+    	(response) => (response.json())
+       ).then((response)=>{
+      if (response.status === 'success'){
+        alert("Message Sent."); 
+        this.resetForm()
+      }
+      else if(response.status === 'fail'){
+        alert("Message failed to send.")
+      }
+    })
+   }
+   
+   resetForm(){
+      this.setState({name: '', email: '', subject: '', message: ''})
+   }
+
+
+  render() {
     if(this.props.data){
       var name = this.props.data.name;
       var street = this.props.data.address.street;
@@ -36,27 +85,27 @@ class Contact extends Component {
          <div className="row">
             <div className="eight columns">
 
-               <form action="" method="post" id="contactForm" name="contactForm">
+               <form  onSubmit={this.handleSubmit.bind(this)} method="POST" id="contactForm" name="contactForm">
 					<fieldset>
 
                   <div>
 						   <label htmlFor="contactName">Name <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size="35" id="contactName" name="contactName" onChange={this.handleChange}/>
+						   <input type="text" value={this.state.name} size="35" id="contactName" name="contactName"  onChange={this.onNameChange.bind(this)}/>
                   </div>
 
                   <div>
 						   <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size="35" id="contactEmail" name="contactEmail" onChange={this.handleChange}/>
+						   <input type="text" value={this.state.email} size="35" id="contactEmail" name="contactEmail" onChange={this.onEmailChange.bind(this)}/>
                   </div>
 
                   <div>
 						   <label htmlFor="contactSubject">Subject</label>
-						   <input type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject" onChange={this.handleChange}/>
+						   <input type="text" value={this.state.onSubjectChange} size="35" id="contactSubject" name="contactSubject" onChange={this.onSubjectChange.bind(this)}/>
                   </div>
 
                   <div>
                      <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage" value={this.state.message} onChange={this.onMessageChange.bind(this)}></textarea>
                   </div>
 
                   <div>
