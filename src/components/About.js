@@ -33,7 +33,7 @@ class About extends Component {
                            {state}, {zip}
                    </span><br />
                      <span>{email}</span><br />
-                     <span>{email2}</span>
+                     {/* <span>{email2}</span> */}
 					   </p>
                </div>
                <div className="columns download">
