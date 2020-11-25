@@ -113,6 +113,13 @@
         "image":"course-scheduler.jpg",
         "url":"https://mmendiratta.github.io/Course-Scheduler/",
         "repo": "https://github.com/mmendiratta/Course-Scheduler"
+      },
+      {
+        "title":"Employee Directory",
+        "category":"Project to learn full-stack development",
+        "image":"employee-directory.png",
+        "url":"https://mmendiratta.github.io/employee-directory-frontend/",
+        "repo": "https://github.com/mmendiratta/employee-directory-frontend"
       }
     ]
   },
