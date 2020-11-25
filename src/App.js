@@ -7,13 +7,13 @@ import Portfolio from './components/Portfolio.js';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { Component } from 'react';
-import data from './resumeData.json'
+import resumeData from './resumeData.json'
 
 class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      resumeData: data
+      resumeData: resumeData,
     };
   }
 
@@ -23,7 +23,7 @@ class App extends Component {
         <Header data={this.state.resumeData.main}/>
         <About data={this.state.resumeData.main}/>
         <Resume data={this.state.resumeData.resume}/>
-        <Portfolio />
+        <Portfolio/>
         <Contact data={this.state.resumeData.main}/>
         <Footer data={this.state.resumeData.main}/>
       </div>
