@@ -53,9 +53,9 @@
     "work":[
       {
         "company":"Target Corporation",
-        "title":"Software Engineer Intern",
+        "title":"Software Engineer",
         "years":"July 2020 - Current",
-        "description":"I am currently in a rotation program with Target called the Technology Leadership Program. My first 6 months were spent with a frontend team using React/Typescript. We worked on developing a Supply Chain application that allowed for the tracking of Target's trailers around the country."
+        "description":"I am currently in a rotation program with Target called the Technology Leadership Program. My first 6 months were spent with a frontend team using React/Typescript. We worked on developing a Supply Chain application that allowed for the tracking of trailers within Target's supply chain network. My next 6 months will be Stores Inventory, and I will be working with Java/Kotlin/Kafka to handle information about all the inventory within each store around the US."
       },
       {
         "company":"Target Corporation",
