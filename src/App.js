@@ -1,31 +1,34 @@
-import React from 'react';
-import './App.css';
-import Header from './components/Header.js'
-import About from './components/About.js'
-import Resume from './components/Resume';
-import Portfolio from './components/Portfolio.js';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import { Component } from 'react';
-import resumeData from './resumeData.json'
+import React from "react";
+import "./App.css";
+import Header from "./components/Header.js";
+import About from "./components/About.js";
+import Resume from "./components/Resume";
+import Portfolio from "./components/Portfolio.js";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import { Component } from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import resumeData from "./resumeData.json";
+import Blog from "./components/Blog";
 
 class App extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
-      resumeData: resumeData,
+      resumeData: resumeData
     };
   }
 
   render() {
     return (
       <div className="App">
-        <Header data={this.state.resumeData.main}/>
-        <About data={this.state.resumeData.main}/>
-        <Resume data={this.state.resumeData.resume}/>
-        <Portfolio/>
-        <Contact data={this.state.resumeData.main}/>
-        <Footer data={this.state.resumeData.main}/>
+        <Header data={this.state.resumeData.main} />
+        <About data={this.state.resumeData.main} />
+        <Resume data={this.state.resumeData.resume} />
+        <Portfolio />
+        <Contact data={this.state.resumeData.main} />
+        <Blog />
+        <Footer data={this.state.resumeData.main} />
       </div>
     );
   }

@@ -4,7 +4,7 @@
     "occupation":"Software Engineer",
     "description":"I recently graduated from the University of Wisconsin-Madison, and am currently employed with Target",
     "image":"profilepic.jpg",
-    "bio":"I'm a recent 22 year-old college graduate. I describe myself as someone who is passionate about learning and trying new things, while also not being afraid to inquire about things I don't understand. I grew up playing sports my whole life such as basketball, soccer, and golf, which has led me to become an avid Minnesota sports fan. I aspire to travel and see as much of the world as I can in my life. ",
+    "bio":"I'm a recent 23 year-old college graduate. I describe myself as someone who is passionate about learning and trying new things, while also not being afraid to inquire about things I don't understand. I grew up playing sports my whole life such as basketball, soccer, and golf, which has led me to become an avid Minnesota sports fan. I aspire to travel and see as much of the world as I can in my life. ",
     "contactmessage":"You can get in contact with me by filling out the form below!",
     "email": "mannimendiratta@yahoo.com",
     "email2": "mannimendiratta@gmail.com",
@@ -120,14 +120,6 @@
         "image":"employee-directory.png",
         "url":"https://mmendiratta.github.io/employee-directory-frontend/",
         "repo": "https://github.com/mmendiratta/employee-directory-frontend"
-      }
-    ]
-  },
-  "testimonials":{
-    "testimonials":[
-      {
-        "text":"Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
-        "user":"Kareem Abdul Jabbar"
       }
     ]
   }
