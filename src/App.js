@@ -7,7 +7,6 @@ import Portfolio from "./components/Portfolio.js";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import resumeData from "./resumeData.json";
 import Blog from "./components/Blog";
 
