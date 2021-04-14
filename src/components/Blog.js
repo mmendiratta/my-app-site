@@ -66,7 +66,7 @@ export default function Blog() {
           <img src={story.thumbnail} alt={"storyImg"}></img>
           <CardContent>
             <Typography variant="body2" color="textSecondary" component="p">
-              {shortenText(divToText(story.content, 0, 30) + "...")}
+              {shortenText(divToText(story.content), 0, 300) + "..."}
             </Typography>
           </CardContent>
         </Card>
